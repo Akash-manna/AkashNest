@@ -1,10 +1,6 @@
 <?php
-    $dbhost = 'localhost';
-    $dbname = 'akashnest';
-    $dbuser = 'akash';
-    $dbpass = 'akash';
-    $appname = "The Pack";
-        
+    require_once 'credentials.php';
+
     $connection = new mysqli($dbhost, $dbuser, $dbuser, $dbname);
     if($connection->connect_error){ 
         die($connection->connect_error);
